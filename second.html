@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Layout</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+.img img {
+    width: 100px;
+    height: 100px;
+    object-fit : cover;
+    border-radius: 50%;
+}
+.content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+}
+.box {
+    flex: 1;
+    
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div  class="header" style="display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 20px;
+                                background-color: #ff5e5e;">
+        <p>About</p>
+        <div  class="img">
+            <img src="https://www.bing.com/th/id/OIP.Fc1OImsK4AGWS7UgPmwOHgHaHa?w=182&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" >
+        </div>
+    </div>
+    <div class="content">
+        <div class="box" style="height: 120px;
+        width: 50%;
+         justify-content: center;
+          align-items: center;
+          background-color: rgb(119, 16, 16);
+          color: bisque;">Contact</div>
+        <div class="box" style="height: 120px;
+         justify-content: center;
+          align-items: center;
+          background-color: rgb(119, 16, 16);
+          color: bisque;">Education</div>
+    </div>
+</div>
+</body>
+</html>

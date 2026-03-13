@@ -1,39 +1,117 @@
 body{
-    font-family: Arial;
-    margin:0;
-    background:#f4f4f4;
+font-family: Arial;
+margin:0;
+background:#774a4a;
 }
 
-header{
-    background:#333;
-    color:white;
-    text-align:center;
-    padding:30px;
+/* Placement Section */
+
+.placements{
+text-align:center;
+padding:50px;
 }
 
-nav{
-    background:#555;
-    text-align:center;
-    padding:10px;
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
 }
 
-nav a{
-    color:white;
-    margin:10px;
-    text-decoration:none;
-    font-weight:bold;
+.card{
+background:rgb(140, 189, 192);
+padding:25px;
+width:300px;
+border-radius:8px;
+box-shadow:0 2px 10px rgba(228, 228, 228, 0.1);
+color: black;
 }
 
-section{
-    padding:30px;
-    background:white;
-    margin:20px;
-    border-radius:10px;
+.card h3{
+font-size:18px;
+margin-bottom:10px;
 }
 
-footer{
-    text-align:center;
-    background:#333;
-    color:white;
-    padding:10px;
+/* About Section */
+
+.about{
+display:flex;
+padding:60px;
+gap:40px;
+background:black;
+}
+
+.left{
+width:40%;
+}
+
+.right{
+display:flex;
+gap:20px;
+}
+
+.box{
+background:#aa5e5e;
+padding:20px;
+border-radius:8px;
+width:200px;
+}
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f1c2e;
+color:white;
+}
+
+.departments{
+padding:50px;
+text-align:center;
+}
+
+.departments h1{
+font-size:40px;
+margin-bottom:40px;
+}
+
+.dept-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.card{
+position:relative;
+height:250px;
+border-radius:10px;
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:0.5s;
+}
+
+.card:hover img{
+transform:scale(1.1);
+}
+
+.text{
+position:absolute;
+bottom:20px;
+left:20px;
+color:white;
+}
+
+.text h2{
+margin:0;
+font-size:20px;
+}
+
+.text p{
+margin:5px 0 0;
+font-size:14px;
+opacity:0.8;
 }
